@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Prediction</title>
+</head>
+<body>
+    <h1>Predict Height</h1>
+    <form action="{{ url_for('predict_datapoint')}}"   method="post">
+        <input type="text"  name="Weight"  placeholder="Weight"  required="required"> <br>
+        <button type="submit" class="btn"> Predict</button>
+    </form>
+
+    <h2>Heigh is Predicted is {{result}}</h2>
+</body>
+</html>
